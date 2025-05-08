@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Lover</title>
+  <style>
+    :root {
+      --main-color: #efa593;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--main-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: white;
+      padding-left: 16px;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+      background-color: #fff0ea;
+    }
+
+    .hero-left {
+      flex: 1 1 100px;
+      padding-left: 4rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      text-align: center;
+    }
+
+    .hero-left img.logo {
+      max-width: 250px;
+      max-height: 200px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-left h2 {
+      font-size: 1.5rem;
+      color: #444;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .hero-right {
+      flex: 1 1 300px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .hero-right img.Home {
+      max-width: 100%;
+      max-height: 70vh;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      background-color: #fcf5eb;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: var(--main-color);
+    }
+    section#testimony{
+      width: 100vw;
+
+    }
+    section#about img.about{
+      width: 90vw;
+      margin: 5%;
+    }
+    section#testimony {
+      background-color:#efa593 ;
+    }
+    section#testimony img.testimony {
+      width: 80vw;
+      margin: 5%;
+    }
+    section#testimony h2 {
+      color: #fcf5eb;
+      padding-top: 16px;
+      font-size: 3rem;
+    }
+
+    section#contact img.contact {
+     width: 90vw;
+     margin: 5%;
+    }
+    section p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 1rem 2rem;
+
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-left, .hero-right {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <h1>Pet Lover</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#testimony">Testimony</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <!-- Logo -->
+      <img src="image/Petlover.png" alt="Pet Lover Logo" class="logo"/>
+      <!-- Heading -->
+      <h2>Personalized DNA necklaces crafted with love and your pet’s unique DNA</h2>
+    </div>
+    <div class="hero-right">
+      <!-- Image Placeholder -->
+      <a href="#contact">
+      <img src="image/Home.png" alt="Pet DNA Necklace Image" class="Home"/>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <img src="image/ABOUT.png" href="#ABOUT" alt="ABOUT Image" CLASS="about" />
+    
+  
+  </section>
+
+  <!-- Testimony Section -->
+  <section id="testimony">
+    <h2>What Our Customers Say</h2>
+    <img src="image/testimony.png" alt="testimony" class="testimony"/>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <a href="mailto:petlover@haikanglife.com" >
+    <img src="image/contact_us.png"  alt="contact.us" class="contact"/>
+    </a>  
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DNAtech. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
